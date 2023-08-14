@@ -1,0 +1,20 @@
+<!-- <p>add-review works!</p> -->
+
+<form class="myForm" [formGroup]="addReview" (ngSubmit)="reviewSubmit()">
+    <div class="mb-3">
+      <label for="fullname" class="form-label">Full name</label>
+      <input type="text" class="form-control" id="fullname" placeholder="Enter Your Name" formControlName="fullname">
+    </div>
+    <div class="mb-3">
+      <label for="movie" class="form-label">Type Movie Name</label>
+      <input type="text" class="form-control" id="movie" placeholder="Enter Movie Name" formControlName="movie">
+    </div>
+    <div class="mb-3">
+      <label for="review" class="form-label">Add Rivew</label>
+      <input type="text" class="form-control" id="review" placeholder="Type Your Review" formControlName="review">
+    </div>
+    
+   
+        <input type="submit" value="Add Data">&nbsp;&nbsp;
+        <input type="reset" value="Reset">
+  </form>

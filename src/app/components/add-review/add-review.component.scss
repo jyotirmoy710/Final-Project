@@ -1,0 +1,50 @@
+/* styles.scss */
+
+/* Form Container */
+.myForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  /* Form Fields */
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  /* Submit and Reset Buttons */
+  input[type="submit"],
+  input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Change submit button background color */
+    color: #fff; /* Change submit button text color */
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: #0056b3; /* Change submit button hover background color */
+  }
+  
+  /* Error Messages */
+  .text-danger {
+    color: #f00; /* Change error message color */
+  }
+  

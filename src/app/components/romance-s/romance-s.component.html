@@ -1,0 +1,21 @@
+
+<div class="cover">
+    <div class="container">
+        <div class="row">
+    
+                <div class="col-12 col-sm-12 col-md-12 col-xl-12 col-lg-4 text-center">
+                    <div class="card bg-dark text-center py-2 px-2">
+                        <img src="{{data.img}}" style="height: 250px; width: 300px;">
+                        <h5 class="text-center text-light">{{data.movie_name}}</h5>
+                        <h5 class="text-center text-light">{{data.year}}</h5>
+                        <p class="text-center text-light">Genre-{{data.desc}}</p>
+                        <a routerLink="/viewreview/{{mname}}">
+                            <button class="btn btn-outline-primary mb-2">See Review</button>
+                        </a>
+                        <a routerLink="/addreview">
+                            <button class="btn btn-outline-primary">Add Review</button>
+                        </a>
+                    </div>
+                </div>
+    
+            </div>

@@ -1,0 +1,203 @@
+<header>
+  <nav class="navbar navbar-expand-lg bg-black">
+    <div class="container-fluid">
+      <a class="navbar-logo" href="#">
+        <img class="nav-img" src="/assets/img/logo-no-background.png" alt="">
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-2">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-light" routerLink="action">Action</a></li>
+              <li><a class="dropdown-item text-light" routerLink="drama">Drama</a></li>
+              <li><a class="dropdown-item text-light" routerLink="sci_fi">Science Fiction</a></li>
+              <li><a class="dropdown-item text-light" routerLink="romance">Romance</a></li>
+              <li><a class="dropdown-item text-light" routerLink="thriller">Thriller</a></li>
+              <li><a class="dropdown-item text-light" routerLink="crime">Crime</a></li>
+              <li><a class="dropdown-item text-light" routerLink="comedy">Comedy</a></li>
+
+            </ul>
+          </li>
+        </ul>
+
+        <div>
+
+          <!-- <div class=""> -->
+            <!-- <ng-container *ngIf="loggedIn()">
+              <i class="fa-regular fa-user bg-light"></i><br>
+              <span class="text-light">{{fname}}</span>
+              <button (click)="loggingOut()">Log Out</button>
+            </ng-container> -->
+
+            <ng-container *ngIf="loggedIn()">
+              <div class="dropdown">
+                <button class="dropdown-toggle transparent-button " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="assets/img/profile.png" alt="" />
+                </button>
+                <ul class="dropdown-menu profile ">
+                  <li>
+                    <a class="dropdown-item " (click)="loggingOut()"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </ng-container>
+
+
+
+
+
+
+            <ng-container *ngIf="!loggedIn()">
+
+              <!-- singn modal button  -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signinmodal">
+                Sign up
+              </button>
+
+              <!-- login modal button  -->
+
+              <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#loginmodal">
+                Log in
+              </button>
+            </ng-container>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signinmodal" tabindex="-1" aria-labelledby="signmodal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-light" id="signmodal">Sign Up</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="myForm" [formGroup]="regForm" (ngSubmit)="collectedData()">
+            <div class="main">
+              <label for="fname" class="text-light">First Name</label><br>
+              <input type="text" formControlName="fname"><br>
+              <ng-container *ngIf="regForm.get('fname')?.touched">
+                <ng-container *ngIf="regForm.get('fname')?.hasError('minlength')">
+                  <p class="text-light">Minimum Length Should Be 6 Letters</p>
+                </ng-container>
+                <ng-container *ngIf="regForm.get('fname')?.hasError('required')">
+                  <p>Required</p>
+                </ng-container>
+              </ng-container><br>
+              <label for="lname" class="text-light">Last Name</label><br>
+              <input type="text" formControlName="lname"><br>
+              <ng-container *ngIf="regForm.get('lname')?.touched">
+                <ng-container *ngIf="regForm.get('lname')?.hasError('minlength')">
+                  <p class="text-light">Minimum Length Should Be 6 Letters</p>
+                </ng-container>
+                <ng-container *ngIf="regForm.get('lname')?.hasError('required')">
+                  <p>Required</p>
+                </ng-container>
+              </ng-container><br>
+              <label for="email" class="text-light">Email</label><br>
+              <input type="text" formControlName="email"><br>
+              <ng-container *ngIf="regForm.get('email')?.touched">
+                <ng-container *ngIf="regForm.get('email')?.hasError('required')">
+                  <p class="text-light">Required</p>
+                </ng-container>
+              </ng-container>
+              <p class="text-light">Gender</p>
+
+              <label for="Male" class="px-2 text-light">
+                <input type="radio" value="male" formControlName="gen" id="" class="text-light">Male</label>
+              <label for="female" class="px-2 text-light">
+                <input type="radio" value="female" formControlName="gen" id="" class="text-light">Female</label>
+              <label for="other" class="px-2 text-light">
+                <input type="radio" value="other" formControlName="gen" id="" class="text-light">Other</label><br><br>
+
+              <ng-container *ngIf="regForm.get('gen')?.touched && regForm.get('gen')?.hasError('required')"><span
+                  class="text-light">Required</span></ng-container>
+              <label for="phone" class="text-light">Phone</label><br>
+              <input type="number" formControlName="ph"><br>
+              <ng-container *ngIf="regForm.get('ph')?.touched">
+                <ng-container *ngIf="regForm.get('ph')?.hasError('required')">
+                  <p class="text-light">Required</p>
+                </ng-container>
+              </ng-container><br>
+              <label for="password" class="text-light">Password</label><br>
+              <input type="text" formControlName="password"><br>
+              <ng-container *ngIf="regForm.get('pass')?.touched">
+                <ng-container *ngIf="regForm.get('pass')?.hasError('required')">
+                  <p class="text-light">required</p>
+                </ng-container>
+                <ng-container *ngIf="regForm.get('pass')?.hasError('minlenth')">
+                  <p class="text-light">Password should be 6 letters</p>
+                </ng-container>
+              </ng-container><br>
+              <label for="profile_pic" class="text-light">Photo</label><br>
+              <input type="file" (change)="fileSelection($event)" class="text-light"><br>
+            </div><br>
+            <button type="submit" class="btn btn-primary d-flex justify-content-center">Sign
+              Up</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Log In Modal -->
+  <div class="modal fade;" id="loginmodal" tabindex="-1" aria-labelledby="loginmodal" aria-hidden="true">
+    <div class="modal-dialog  ">
+      <div class="modal-content bg-dark">
+        <div class="modal-header d-flex justify-content-center">
+          <h1 class="modal-title fs-5 text-light" id="loginmodal">Log In</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="myForm" [formGroup]="addForm" (ngSubmit)="submitData()">
+            <div class="main">
+              <label for="email" class="text-light">Email</label><br>
+              <input style="width: 250px;" type="text" formControlName="email"><br>
+              <ng-container *ngIf="addForm.get('email')?.touched">
+                <ng-container *ngIf="addForm.get('email')?.hasError('required')">
+                  <p class="text-light err">Required Field</p>
+                </ng-container>
+              </ng-container><br>
+              <label for="password" class="text-light">Password</label><br>
+              <input style="width: 250px;" type="password" formControlName="password"><br>
+              <ng-container *ngIf="addForm.get('password')?.touched">
+                <ng-container *ngIf="addForm.get('password')?.hasError('required')">
+                  <p class="text-light err">Required Field</p>
+                </ng-container>
+              </ng-container><br>
+            </div><br>
+            <button type="submit" style="width: 80px;" class="btn btn-primary">Log
+              in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<router-outlet></router-outlet>
+
+
+

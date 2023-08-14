@@ -1,0 +1,274 @@
+.navbar{
+border-bottom: 0.5px solid white;
+}
+
+
+// .navbar-logo {
+//     width: 100px;
+//     // height: 50px;  
+// }
+// .nav-img {
+//     width: 120px;
+//     height: 60px;
+//     // border: 1px transparent white;
+//     // border-radius: 10px;
+//     padding-right: 15px;
+//     // filter: brightness(3.5)
+// }
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 60px;
+  
+}
+
+.nav-img {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+}
+
+
+
+
+.err {
+    position: absolute;
+    transform: translateX(50px);
+}
+
+.dropdown-item:hover {
+
+    background-color: blue;
+}
+
+
+// signup modal
+/* styles.scss */
+
+/* Modal */
+.modal-content {
+    background-color: #333; /* Change background color */
+    color: #fff; /* Change text color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-header {
+    background-color: #222; /* Change header background color */
+    border-bottom: none;
+    color: #fff; /* Change header text color */
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .modal-footer {
+    background-color: #222; /* Change footer background color */
+    border-top: none;
+    color: #fff; /* Change footer text color */
+  }
+  
+  /* Form */
+  .myForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .myForm label {
+    margin-bottom: 5px;
+  }
+  
+  .myForm input[type="text"],
+  .myForm input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #777; /* Change input border color */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    color: #fff; /* Change input text color */
+    background-color: #444; /* Change input background color */
+  }
+  
+  .myForm input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .myForm button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Change submit button background color */
+    color: #fff; /* Change submit button text color */
+    cursor: pointer;
+  }
+  
+  .myForm button[type="submit"]:hover {
+    background-color: #0056b3; /* Change submit button hover background color */
+  }
+  
+  .myForm p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  /* File Input */
+  .myForm input[type="file"] {
+    color: #fff; /* Change file input text color */
+  }
+  
+  /* Error Messages */
+  .text-light {
+    color: #f00; /* Change error message color */
+  }
+  
+
+/* Log-in Modal Styles */
+
+
+#loginmodal {
+    .modal-dialog {
+      .modal-content {
+        background-color: #212529; // Dark background color
+        color: #ffffff; // Light text color
+  
+        .modal-header {
+          justify-content: center;
+          border: none;
+  
+          .modal-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+        }
+  
+        .modal-body {
+          .myForm {
+            width: 250px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center; // Center elements horizontally
+  
+            label {
+              display: block;
+              color: #ffffff;
+            }
+  
+            input {
+              width: 100%;
+              padding: 5px;
+              margin-bottom: 10px;
+              border: 1px solid #ffffff;
+              border-radius: 5px;
+              color: #ffffff;
+              background-color: transparent;
+            }
+  
+            .err {
+              position: absolute;
+              transform: translateX(50px);
+              color: red;
+            }
+  
+            button[type="submit"] {
+              width: 80px;
+              margin-top: 10px;
+              padding: 5px;
+              border: none;
+              border-radius: 5px;
+              background-color: #007bff; // Blue primary color
+              color: #ffffff;
+              cursor: pointer;
+  
+              &:hover {
+                background-color: #0056b3; // Darker shade on hover
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+
+//   Profile
+
+
+/* styles.scss */
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .transparent-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  /* Profile Image */
+  .transparent-button img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  /* Dropdown Menu Styles */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    padding: 8px 0;
+    min-width: 150px;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  .dropdown-item {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  
+  .dropdown-item:hover {
+    background-color: blue;
+  }
+  
+
+  /* Right arrow icon for Logout item */
+  .dropdown-item i {
+    margin-right: 5px;
+  }
+  
+  /* Profile image in the dropdown */
+  .profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+
+  .profile{
+    /* background-color: aqua; */
+    left:auto !important; 
+    right:0;
+  }

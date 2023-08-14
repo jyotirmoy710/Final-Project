@@ -1,0 +1,106 @@
+{
+  "review": [
+    {
+      "movie": "The Dark Knight",
+      "fullname": "Jyoti",
+      "review": "The Dark Knight is Christopher Nolan's magnum opus and a gripping, unforgettable thrill ride from start to finish. ",
+      "id": 1
+    },
+    {
+      "fullname": "Kusal",
+      "movie": "Inception",
+      "review": "I saw Memento very recently, something that turned out to be a great miss.I saw it again, just to make a couple of thins straight-and i'll definitely do the same with Inception.",
+      "id": 2
+    },
+    {
+      "fullname": "Arijit",
+      "movie": "Inception",
+      "review": "I saw Memento very recently, something that turned out to be a great miss.I saw it again, just to make a couple of thins straight-and i'll definitely do the same with Inception.",
+      "id": 3
+    },
+    {
+      "fullname": "Ayan",
+      "movie": "Inception",
+      "review": "One of the best films of the entire century! A superbly crafted, MIND-BENDING, action packed, chilling thriller and suspense movie... I recommend it to every movie goofie and to the fans of Christopher Nolan.. It is one of his best ( if not the best) movie which can keep you at the edge of your seat.",
+      "id": 4
+    },
+    {
+      "fullname": "Suvojit Modak",
+      "movie": "The Dark Knight",
+      "review": "In the Trilogy of Dark knight by Christopher Nolan,Shows us the real world approach on the comic created character Batman. Chris Actually showed the Batman in a different perspective that was new to the comic fans, the 3 movies shows the journey of batman how he evolves in every story.the three movies reflect the Beginning, fall and rise of batman So The Dark Knight (2008) is about the fall of batman.",
+      "id": 5
+    },
+    {
+      "fullname": "Rimasree Ghosh",
+      "movie": "The Dark Knight",
+      "review": "I grew up on the animated series, loved the first two Batman films, sort of liked Batman Forever but disappointed in Batman and Robin. I have yet to re-watch Batman Begins, but I thoroughly enjoyed this film on re-watch having really liked it first time. It is very well made and gripping with some great performances, but personally I would put Casablanca, Wizard of Oz, Amadeus and It's a Wonderful Life over this.",
+      "id": 6
+    },
+    {
+      "fullname": "Saptak",
+      "movie": "The Godfather",
+      "review": "Winner of 3 Academy Awards, including Best Picture and Best Adapted Screenplay, The Godfather is one of the most revered movies of all time and its contribution to cinema is remarkable. This movie will make you intrigued by its astounding depiction of the mafia and immerse you into its world from the very start while being impressed by its technical and narrative aspects.",
+      "id": 7
+    },
+    {
+      "fullname": "Rahul",
+      "movie": "The Godfather",
+      "review": "A movie which certainly does not need a review for sure. Commanding performance of entire cast, all dialogues are already written in silver line, epic scenes and marvelous acting of Marlon and Al Pacino.",
+      "id": 8
+    },
+    {
+      "fullname": "Suvojit Modak",
+      "movie": "The Godfather",
+      "review": "As no one can show light to the Sun as you wouldn't dare write a review for this masterpiece! And certainly not in 2019!",
+      "id": 9
+    },
+    {
+      "fullname": "Suvojit Modak",
+      "movie": "The Book of Eli",
+      "review": "This movie teach us to appreciate what had been given in our present live, especially water, air, trees, peacefull environment, law and order, and even the soothing smell from the last shampoo on earth, that would be instantly lost in a dim of great blast of war. It also teach us about pure heart that will guide us to be more human. ",
+      "id": 10
+    },
+    {
+      "fullname": "Sunny",
+      "movie": "The Book of Eli",
+      "review": "Brilliant movie, with a profound teaching. When I first started watching this movie i thought it was going to be another cheesy hollywood action flick but it turned out to be something completely different.  *spoilers, don't read on if you haven't watched it yet'. ",
+      "id": 11
+    },
+    {
+      "fullname": "Debojit",
+      "movie": "The Book of Eli",
+      "review": "The Book of Eli takes place after the world is destroyed by war. Eli possesses the last Bible on earth and heading towards the San Francisco Bay where he hopes to deliver the last copy of the Holy Bible to a group of antiquarians. Unfortunately, while resting in a roadside community, he and his asset attracts the attention of an ambitious tyrant who desires the book to beguile people and secure an authoritative position. ",
+      "id": 12
+    },
+    {
+      "fullname": "Sayan",
+      "movie": "The Out-Laws",
+      "review": "I liked this movie a lot, the cast choice was great, Pierce Brosnan is one of my favourite actors from my childhood.. He brings Bond charm, charisma and cool to the role and is really the first reason why I decided to watch. ",
+      "id": 13
+    },
+    {
+      "fullname": "Soumyo",
+      "movie": "The Out-Laws",
+      "review": "If this is the quality the Hollywood writers are coming up with that passes for 'good enough' entertainment, then I really hope they get a sweetheart deal with the studios, because without hitting that jackpot, the average writers will be forced to look for other means of income, as AI can come up with way better rough drafts for the real talented writers to edit and finalize for the studios.",
+      "id": 13
+    },
+    {
+      "fullname": "Arijit",
+      "movie": "Lawrence of Arabia",
+      "review": "This movie is a must see for all film aficionados. It's one of the only films I can honestly say deserves perfect scores  in all categories. It is the absolute pinnacle of all the great epic films of its day and still holds it's own in modern times. It's almost four hours long and worth every second. Especially for those who like studying the craft of film making  and people who just love great movies.",
+      "id": 14
+    },
+    {
+      "fullname": "Soumyo",
+      "movie": "Lawrence of Arabia",
+      "review": "Considering when the film was made it’s a masterpiece of location and sceneries, no cgi in this film. The historical accuracy isn’t bad either, although not pc enough for modern audiences. If you are interested in early twentieth century history, and why the modern Middle East is like it is now then it’s a good primer. Seeing actors like Peter O Toole and Alec Guinness is a treat, can’t say I’m keen on the music ( bit too overpowering). Still I enjoyed watching it again.",
+      "id": 14
+    },
+    {
+      "fullname": "Jyotirmoy",
+      "movie": "The Out-Laws",
+      "review": "Good",
+      "id": 15
+    }
+  ]
+}

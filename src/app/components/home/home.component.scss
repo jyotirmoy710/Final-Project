@@ -1,0 +1,175 @@
+
+
+.main{
+    height: 559px;
+    background-size: cover;
+    overflow: hidden;
+    background-image: url("/assets/img/new.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.5px white solid;
+
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:65px ;
+    width: 100%;
+}
+
+.text{
+    width: 100%;
+    
+}
+
+
+.text1{
+    font-size: 80px;
+    
+}
+.text2{
+    font-size: 45px;
+}
+
+
+
+// $primary-color: #007bff;
+// $border-color: #ccc;
+// $box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+// .card-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+// }
+
+// .card {
+//   border: 1px solid $border-color;
+//   border-radius: 10px;
+//   padding: 20px;
+//   box-shadow: $box-shadow;
+
+//   img {
+//     max-width: 100%;
+//     height: auto;
+//   }
+
+//   h2 {
+//     font-size: 18px;
+//     margin-top: 10px;
+//   }
+
+//   button {
+//     background-color: $primary-color;
+//     color: #fff;
+//     border: none;
+//     border-radius: 5px;
+//     padding: 8px 15px;
+//     cursor: pointer;
+//     margin-top: 10px;
+//   }
+// }
+
+.container-fluid.bg-dark.card2 {
+  padding-bottom: 70px;
+  
+  .text-center.py-2.text-light {
+    font-size: 24px; // Adjust font size as needed
+  }
+  
+  .container.mt-5 {
+    display: flex;
+    justify-content: center;
+    
+    .row {
+      .col-md-6 {
+        .card {
+          max-width: 400px; // Set the maximum width for medium-sized cards
+          margin: 10px; // Adjust margins as needed
+          
+          .card-img-top {
+            height: auto; // Allow the image to adjust its height while maintaining aspect ratio
+            max-height: 250px; // Set the maximum height for medium-sized cards
+          }
+          
+          .card-body {
+            padding: 20px; // Adjust padding as needed
+            text-align: center;
+            
+            .card-title {
+              font-size: 20px; // Adjust font size as needed
+            }
+            
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+.card2{
+  border-bottom: 0.5px white solid;
+}
+
+.card3{
+  border-bottom: 0.5px white solid;
+
+}
+
+.card4{
+  border-bottom: 0.5px white solid;
+
+}
+  
+
+// for 4 cards
+
+  // Custom SCSS for the trending cards
+.trending-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 1.5rem;
+
+    .card-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+      color: #777;
+    }
+
+    .btn {
+      margin-top: 1rem;
+    }
+  }
+}
+
+// Create space between cards
+.row {
+  margin: -15px;
+
+  .col-md-3 {
+    padding: 15px;
+  }
+}

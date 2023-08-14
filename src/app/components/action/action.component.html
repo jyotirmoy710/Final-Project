@@ -1,0 +1,19 @@
+
+<div class="container-fluid d-flex py-5 bg-dark">
+    <div class="row container mx-auto">
+        <h3 class="text-light heading d-flex justify-content-center">Top 20 Action Films</h3>
+        <ng-container *ngFor="let c of allactn">
+            <div class="col-xl-3 col-lg col-md-6 col-sm-6 py-4">
+                <div class="card bg-light p-2 text-dark" style="height: 520px;">
+                    <img src="{{c.img}}" style="height: 300px;">
+                    <h5 class="text-center">{{c.movie_name}}</h5>
+                    <h5 class="text-center">{{c.year}}</h5>
+                    <p class="text-center">Genre-{{c.desc}}</p>
+                    <a class="d-flex justify-content-center mt-auto" >
+                        <button class="btn btn-primary" routerLink="action-s/{{c.id}}">View</button>
+                    </a>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
